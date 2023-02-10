@@ -1,0 +1,45 @@
+<html>
+<body>
+  <script type="text/javascript">
+    class Gato1 {
+    constructor(nome, idade, cor, acao, som){
+        this.nome = nome,
+        this.idade = idade,
+        this.cor = cor,
+        this.acao = acao,
+        this.som = som
+    }
+    get teste() {
+        return (this.nome + this.idade + this.cor + this.acao+ this.som);
+    }
+
+    }
+    let pingo = new Gato1('Mimi', '2', 'Marrom','ronroncar','Miau miauu miauuu')
+ 
+    document.write("Nome: " + pingo.nome + "<br>") ;
+    document.write("Idade: " + pingo.idade + "<br>");
+    document.write("Ronronar: " + pingo.acao + "<br>");
+    document.write("Miar: " + pingo.som);
+
+    class Gato {
+    constructor(nome, idade, cor, acao, som){
+        this.nome = nome,
+        this.idade = idade,
+        this.cor = cor,
+        this.acao = acao,
+        this.som = som
+    }
+    set nomeGato(nomeGato) {
+        this.nome = nomeGato
+    }
+    }
+    let fred = new Gato('', '3', 'bege','ronroncar','Miau miauu miauuu')
+    fred.nomeGato = 'Fred'
+    document.write(fred.nome + "<br>") ;
+    document.write(fred.idade + "<br>");
+    document.write(fred.acao + "<br>");
+    document.write(fred.som);
+
+  </script>
+</body>
+</html>
